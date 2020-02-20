@@ -30,3 +30,16 @@ resource "aws_subnet" "bu2_database" {
   cidr_block = "10.0.4.0/24"
   tags = var.default_tags
 }
+
+resource "aws_subnet" "bu1_services_v2" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = "10.0.5.0/24"
+  tags = var.default_tags
+}
+
+resource "aws_subnet" "bu1_database_v2" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = "10.0.6.0/24"
+  tags = var.default_tags
+}
+
