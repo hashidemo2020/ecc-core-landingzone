@@ -6,3 +6,27 @@ module "ecclandingzone" {
   cidr_block  = var.vpc_cidr_block
   default_tags = var.default_tags
 }
+
+resource "aws_subnet" "bu1_services" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = var.bu1_services_subnet_cidr
+  tags = var.default_tags
+}
+
+resource "aws_subnet" "bu1_database" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = var.bu1_database_subnet_cidr
+  tags = var.default_tags
+}
+
+resource "aws_subnet" "bu2_services" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = var.bu2_services_subnet_cidr
+  tags = var.default_tags
+}
+
+resource "aws_subnet" "bu2_database" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = var.bu2_database_subnet_cidr
+  tags = var.default_tags
+}
