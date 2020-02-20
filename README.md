@@ -18,7 +18,7 @@ Creates an empty VPC with several subnets to be consumed by BUs.
 
 ## Maintainers
 
-This repositority is largely the work of some Puppet community members.
-It is not officially maintained by Puppet, or any individual in
+This repositority is largely the work of some HashiCorp employees.
+It is not officially maintained by HashiCorp, or any individual in
 particular. Issues should be opened in Github. Questions should be directed
 at the individuals responsible for committing that particular code.
