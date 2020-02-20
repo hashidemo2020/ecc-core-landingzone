@@ -15,3 +15,19 @@ variable "default_tags" {
   description = "Tags to be applied to resources"
   type        = map(string)
 }
+
+variable "bu1_services_subnet_cidr" {
+  description = "CIDR block for the services subnet"
+}
+
+variable "bu1_database_subnet_cidr" {
+  description = "CIDR block for the database subnet"
+}
+
+variable "bu2_services_subnet_cidr" {
+  description = "CIDR block for the services subnet"
+}
+
+variable "bu2_database_subnet_cidr" {
+  description = "CIDR block for the database subnet"
+}
