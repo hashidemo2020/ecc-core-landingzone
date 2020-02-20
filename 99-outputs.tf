@@ -14,9 +14,9 @@ output "bu1_database_subnet_id" {
   value = aws_subnet.bu1_database.id
 }
 
-output "bu1_database_subnet_group_id" {
-  value = aws_db_subnet_group.bu1_database_group.id
-}
+#output "bu1_database_subnet_group_id" {
+#  value = aws_db_subnet_group.bu1_database_group.id
+#}
 
 output "bu2_services_subnet_id" {
   value = aws_subnet.bu2_services.id
