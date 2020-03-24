@@ -19,14 +19,14 @@ resource "aws_subnet" "bu1_database" {
   tags = var.default_tags
 }
 
-#resource "aws_subnet" "bu2_services" {
-#  vpc_id     = module.ecclandingzone.vpc_id
-#  cidr_block = "10.0.3.0/24"
-#  tags = var.default_tags
-#}
+resource "aws_subnet" "bu2_services" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = "10.0.3.0/24"
+  tags = var.default_tags
+}
 
-#resource "aws_subnet" "bu2_database" {
-#  vpc_id     = module.ecclandingzone.vpc_id
-#  cidr_block = "10.0.4.0/24"
-#  tags = var.default_tags
-#}
+resource "aws_subnet" "bu2_database" {
+  vpc_id     = module.ecclandingzone.vpc_id
+  cidr_block = "10.0.4.0/24"
+  tags = var.default_tags
+}
