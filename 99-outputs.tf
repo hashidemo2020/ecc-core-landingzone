@@ -20,4 +20,4 @@ output "bu2_services_subnet_id" {
 
 output "bu2_database_subnet_id" {
   value = aws_subnet.bu2_database.id
-#}
+}
